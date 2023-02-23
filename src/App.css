@@ -1,0 +1,223 @@
+:root {
+  --border-color: rgb(0, 255, 110);
+  --left-background: blue;
+  --left-color: white;
+  --font-title: 'Montserrat', sans-serif; 
+  --font-subtitle: 'Poppins', sans-serif ;
+  --emoji-bullet: '🤖' ;
+  --bg-left:  ;
+  --background-main: ;
+}
+
+/* :root {
+  --border-color: grey;
+  --left-background: black;
+  --left-color: white;
+  --font-title: 'Gloock', serif ;
+  --font-subtitle: 'Poppins', sans-serif ;
+  --emoji-bullet: '👾' ;
+  --bg-left: url("./images/profile/clement.jpg") ;
+  --background-main: url("./images/leather.jpg");
+}  */
+
+/* :root {
+  --border-color: yellow;
+  --left-background: black;
+  --left-color: white;
+  --font-title: 'Poppins', sans-serif ;
+  --font-subtitle: 'Montserrat', sans-serif ;
+  --emoji-bullet: '👻' ;
+  --bg-left: url("./images/profile/habib.jpg") ;
+  --background-main: url("./images/wood.jpg");
+}  */
+
+  /* 'Montserrat', sans-serif; */
+  /* 'Gloock', serif  */
+  /* 'Poppins', sans-serif */
+  /* '👾' '🤖' '👻' '💣' '🙂' */
+
+  /* url("./images/leather.jpg") */
+  /* url("./images/wood.jpg")  */
+  /* url("./images/marble.jpg")  */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* .marble{
+  background: url("./images/marble.jpg") no-repeat center center;
+}
+
+.leather{
+  background: url("./images/leather.jpg") no-repeat center center;
+}
+
+.wood{
+  background: url("./images/wood.jpg") no-repeat center center;
+}
+
+.habib{
+  background: url("./images/profile/habib.jpg") no-repeat center center;
+}
+.ibrahima{
+  background: url("./images/profile/ibrahima.jpg") no-repeat center center;
+}
+.clement{
+  background: url("./images/profile/clement.jpg") no-repeat center center;
+}
+.saidi{
+  background: url("./images/profile/saidi.jpg") no-repeat center center;
+}
+.mouhamadou{
+  background: url("./images/profile/mouhamadou.jpg") no-repeat center center;
+} */
+
+.random{
+  background: var(--bg-left) no-repeat center center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: var(--background-main) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 32cm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gloock';
+  font-size: calc(10px + 2vmin);
+  color: black;
+  position: relative;
+}
+
+.resume{
+  background: white;
+  width: 21cm;
+  height: 29.7cm;
+  position: absolute;
+  margin:auto;
+  -webkit-box-shadow: 5px 6px 37px -1px #000000; 
+  box-shadow: 5px 6px 37px -1px #000000;
+  font-size: 0px;
+}
+
+.col_left{
+  height: 29.7cm;
+  width: 7cm;
+  display: inline-block;
+  font-size: 14px;
+  background-color: var(--left-background) ;
+  color: var(--left-color);
+}
+.col_right{
+  height: 29.7cm;
+  width: 14cm;
+  display: inline-block;
+  font-size: 14px;
+  color: black;
+  vertical-align: top;
+}
+
+.title{
+  font-family: var(--font-title) ;
+  font-weight: 800;
+  font-size: 40px;
+  margin: 20px;
+  margin-top: 30px;
+  text-align: left;
+  height: 35px;
+  border-bottom: 10px solid var(--border-color);
+  color: black;
+  width: fit-content;
+}
+
+.subtitle{
+  font-family: var(--font-subtitle);
+  font-weight: 400;
+  margin-left: 24px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  line-height: 18px;
+  text-align: left;
+  width: fit-content;
+}
+
+.experience{
+  text-align: left;
+  margin-left: 24px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+
+h2{
+  font-family: var(--font-title);
+  width: fit-content;
+  font-weight: 800;
+  font-size: 20px;
+  height: 17.5px;
+  border-bottom: 5px solid var(--border-color);
+  margin-bottom: 10px;
+}
+
+.col_left h2{
+  font-size: 14px;
+  height: 11.5px;
+  margin-left: 20px;
+  margin-top: 30px;
+  border-bottom: 3px solid var(--border-color);
+}
+
+.category div{
+  font-family: var(--font-subtitle);
+  font-weight: 400;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.experience div{
+  font-family: var(--font-subtitle);
+  font-weight: 400;
+  margin-top: 5px;
+  margin-right: 30px;
+}
+
+.subContent::before {
+  content: var(--emoji-bullet);
+  margin-right: 10px;
+}
+
+.subContent{}
+
+.pp{
+  background-size: cover;
+  width: 5cm;
+  height: 5cm;
+  border-radius: 3cm;
+  margin:1cm;
+  position: relative;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
